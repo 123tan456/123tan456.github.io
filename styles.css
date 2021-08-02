@@ -1,0 +1,61 @@
+body{
+	background: #091921;
+}
+
+
+#MyClockDisplay{
+	color: #50798d;
+	font-family: 'Rajdhani', sans-serif;
+}
+.date{
+	position: absolute;
+	top: 38%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #50798d;
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 25px;
+	padding: 0 15px;
+}
+.clock{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	
+	font-size: 60px;
+	border: 2px solid #091921;
+	border-radius:50px;
+	box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.05),
+				inset 0 -10px 10px rgba(255, 255, 255, 0.05),
+				0 10px 10px rgba(0, 0, 0, 0.2),
+				inset 0 10px 10px rgba(0, 0, 0, 0.2);
+	padding: 0 30px;
+}
+
+
+@media screen and (max-width: 992px) {
+	.date{
+		font-size: 25px;
+	}
+
+	.clock{
+		font-size: 50px;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	.date{
+		top: 41%;
+		left: 50%;
+		width: 45%;
+		font-size: 15px;
+	}
+
+	.clock{
+		width: 40%;
+		font-size: 28px;
+		padding: 10px 40px;
+	}
+}
